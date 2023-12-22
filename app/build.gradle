@@ -6,6 +6,15 @@ plugins {
 }
 
 android {
+
+    signingConfigs {
+        release {
+            storeFile file('/home/reza/AndroidStudioProjects/vpn-v2ray-android/key.jks')
+            storePassword '349fs15rdg'
+            keyAlias 'vpnload'
+            keyPassword '349fs15rdg'
+        }
+    }
     compileSdkVersion Integer.parseInt("$compileSdkVer")
     buildToolsVersion "$buildToolsVer"
 
