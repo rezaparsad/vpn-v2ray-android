@@ -175,6 +175,13 @@
         </activity>
 
         <service
+            android:name=".service.FirebaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
             android:name=".service.V2RayVpnService"
             android:enabled="true"
             android:exported="false"
