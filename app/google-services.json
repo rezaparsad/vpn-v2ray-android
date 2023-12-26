@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "540495889727",
+    "project_id": "sorena-vpn",
+    "storage_bucket": "sorena-vpn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540495889727:android:bd91501fabce6c25b83f8a",
+        "android_client_info": {
+          "package_name": "com.sorenavpn.vpn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD2J5V30ntL2-FyYuSZg55umjdU5FIdPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
