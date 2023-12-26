@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "vpnload"
+rootProject.name = "sorenavpn"
 include ':app'

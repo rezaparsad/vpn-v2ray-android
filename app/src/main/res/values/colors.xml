@@ -10,12 +10,12 @@
 
     <!--    <color name="colorPrimary">#008577</color>-->
     <!--    <color name="colorPrimaryDark">#00574B</color>-->
-    <color name="colorPrimary">#0856e0</color>
+    <color name="colorPrimary">#8E45EC</color>
     <color name="colorPrimaryDark">#161616</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBg">#FFFFFF</color>
     <color name="colorText">#000000</color>
-    <color name="statusBar">#034dd2</color>
+    <color name="statusBar">#8133E4</color>
     <color name="connected">#106f10</color>
-    <color name="colorLocationSelected">#2E72ED</color>
+    <color name="colorLocationSelected">#8E56D6</color>
 </resources>

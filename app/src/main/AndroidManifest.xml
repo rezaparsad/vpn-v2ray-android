@@ -168,7 +168,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="vpnload" />
+                <data android:scheme="sorenavpn" />
                 <data android:host="install-config" />
                 <data android:host="install-sub" />
             </intent-filter>
@@ -216,8 +216,8 @@
 
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.vpnload.vpn.action.widget.click" />
-                <action android:name="com.vpnload.vpn.action.activity" />
+                <action android:name="com.sorenavpn.vpn.action.widget.click" />
+                <action android:name="com.sorenavpn.vpn.action.activity" />
             </intent-filter>
         </receiver>
 

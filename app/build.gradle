@@ -10,9 +10,9 @@ android {
     signingConfigs {
         release {
             storeFile file('/home/reza/AndroidStudioProjects/vpn-v2ray-android/key.jks')
-            storePassword '349fs15rdg'
-            keyAlias 'vpnload'
-            keyPassword '349fs15rdg'
+            storePassword '185sdf5s'
+            keyAlias 'sorena'
+            keyPassword '185sdf5s'
         }
     }
     compileSdkVersion Integer.parseInt("$compileSdkVer")
@@ -24,12 +24,12 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.vpnload.vpn"
+        applicationId "com.sorenavpn.vpn"
         minSdkVersion 21
         targetSdkVersion Integer.parseInt("$targetSdkVer")
         multiDexEnabled true
-        versionCode 4
-        versionName "1.1.6"
+        versionCode 1
+        versionName "1.0.0"
     }
 
     buildTypes {
@@ -73,7 +73,7 @@ android {
     android.applicationVariants.all { variant ->
         // assign different version code for each output
         variant.outputs.each { output ->
-            output.outputFileName = "VPNLoad_" + variant.versionName + "_" + output.getFilter(com.android.build.OutputFile.ABI) + ".apk"
+            output.outputFileName = "Sorena_" + variant.versionName + "_" + output.getFilter(com.android.build.OutputFile.ABI) + ".apk"
 
             output.versionCodeOverride =
                     android.defaultConfig.versionCode
@@ -83,8 +83,8 @@ android {
     buildFeatures {
         viewBinding true
     }
-    namespace 'com.vpnload.vpn'
-    testNamespace 'com.vpnload.vpnTest'
+    namespace 'com.sorenavpn.vpn'
+    testNamespace 'com.sorenavpn.vpnTest'
 }
 
 dependencies {

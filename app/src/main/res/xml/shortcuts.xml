@@ -10,8 +10,8 @@
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.vpnload.vpn.ui.ScSwitchActivity"
-            android:targetPackage="com.vpnload.vpn" />
+            android:targetClass="com.sorenavpn.vpn.ui.ScSwitchActivity"
+            android:targetPackage="com.sorenavpn.vpn" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -24,8 +24,8 @@
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.vpnload.vpn.ui.ScScannerActivity"
-            android:targetPackage="com.vpnload.vpn" />
+            android:targetClass="com.sorenavpn.vpn.ui.ScScannerActivity"
+            android:targetPackage="com.sorenavpn.vpn" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -38,8 +38,8 @@
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.vpnload.vpn.ui.SettingsActivity"
-            android:targetPackage="com.vpnload.vpn" />
+            android:targetClass="com.sorenavpn.vpn.ui.SettingsActivity"
+            android:targetPackage="com.sorenavpn.vpn" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>
