@@ -11,7 +11,7 @@ android {
         release {
             storeFile file('/home/reza/AndroidStudioProjects/vpn-v2ray-android/key.jks')
             storePassword '349fs15rdg'
-            keyAlias 'vpnload'
+            keyAlias 'peach'
             keyPassword '349fs15rdg'
         }
     }
