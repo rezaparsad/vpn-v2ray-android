@@ -50,6 +50,7 @@ import java.lang.Runnable
 import java.util.concurrent.TimeUnit
 
 
+
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var binding: ActivityMainBinding
 
