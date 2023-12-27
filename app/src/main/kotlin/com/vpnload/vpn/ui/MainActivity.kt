@@ -341,7 +341,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
                 shareIntent.type="text/plain"
                 shareIntent.putExtra(
                     Intent.EXTRA_TEXT,
-                    "Download link VPN Load.\n\n" + settingsStorage.decodeString(AppConfig.SHARE_APP_LINK, "link")
+                    getString(R.string.text_download_link)+"\n\n" + settingsStorage.decodeString(AppConfig.SHARE_APP_LINK, "link")
                 )
                 startActivity(Intent.createChooser(shareIntent,getString(R.string.share_app_title)))
             }
@@ -435,11 +435,13 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
         Handler().postDelayed({
             try {
-                if (Admob.mNativeAd == null) buttonConnect.text = "Disconnect!"
-                val progressWait: ProgressBar = dialog.findViewById(R.id.progress_load_ad_page)
-                val tikAnimation: LottieAnimationView = dialog.findViewById(R.id.tik_success)
-                tikAnimation.visibility = View.VISIBLE
-                progressWait.visibility = View.GONE
+                if (Admob.mNativeAd == null) {
+                    buttonConnect.text = "Disconnect!"
+                    val progressWait: ProgressBar = dialog.findViewById(R.id.progress_load_ad_page)
+                    val tikAnimation: LottieAnimationView = dialog.findViewById(R.id.tik_success)
+                    tikAnimation.visibility = View.VISIBLE
+                    progressWait.visibility = View.GONE
+                }
             }catch (e: Exception) {}
         }, settingsStorage.decodeString(AppConfig.WAIT_CONNECTED, "1000")?.toLong() ?: 1000)
     }
@@ -488,6 +490,8 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
                         descriptionTextView.text = "Connected!"
                         val progressWait: ProgressBar = dialog.findViewById(R.id.progress_load_ad_page)
                         progressWait.visibility = View.GONE
+                        val tikAnimation: LottieAnimationView = dialog.findViewById(R.id.tik_success)
+                        tikAnimation.visibility = View.GONE
                     }
 
                 })
@@ -503,14 +507,15 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             if (buttonConnect.text.equals("Close!")) dialog.dismiss()
         }
         Handler().postDelayed({
-            val descriptionTextView: TextView = dialog.findViewById(R.id.description_load_ad_page)
-            buttonConnect.text = "Close!"
-            descriptionTextView.text = "Connected!"
-            val progressWait: ProgressBar = dialog.findViewById(R.id.progress_load_ad_page)
-            val tikAnimation: LottieAnimationView = dialog.findViewById(R.id.tik_success)
-            tikAnimation.visibility = View.VISIBLE
-            progressWait.visibility = View.GONE
-
+            if (Admob.mNativeAd == null) {
+                val descriptionTextView: TextView = dialog.findViewById(R.id.description_load_ad_page)
+                buttonConnect.text = "Close!"
+                descriptionTextView.text = "Connected!"
+                val progressWait: ProgressBar = dialog.findViewById(R.id.progress_load_ad_page)
+                val tikAnimation: LottieAnimationView = dialog.findViewById(R.id.tik_success)
+                tikAnimation.visibility = View.VISIBLE
+                progressWait.visibility = View.GONE
+            }
         }, settingsStorage.decodeString(AppConfig.WAIT_CONNECTED, "1000")?.toLong() ?: 1000)
     }
 
@@ -584,7 +589,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
                 shareIntent.type="text/plain"
                 shareIntent.putExtra(
                     Intent.EXTRA_TEXT,
-                    "Download link VPN Load.\n\n" + settingsStorage.decodeString(AppConfig.SHARE_APP_LINK, "link")
+                    getString(R.string.text_download_link)+"\n\n" + settingsStorage.decodeString(AppConfig.SHARE_APP_LINK, "link")
                 )
                 startActivity(Intent.createChooser(shareIntent,getString(R.string.share_app_title)))
             }

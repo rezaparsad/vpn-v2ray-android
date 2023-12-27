@@ -157,7 +157,7 @@ com.shanga.walli
 com.simplehabit.simplehabitapp
 com.slack
 com.snaptube.premium
-com.sololearn
+com.sorenavpn.vpnlolearn
 com.sonelli.juicessh
 com.spotify.music
 com.tencent.huatuo

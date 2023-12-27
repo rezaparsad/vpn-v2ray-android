@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "269840223586",
+    "project_id": "vpnload-reza",
+    "storage_bucket": "vpnload-reza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269840223586:android:56c588f34e900031d0b03b",
+        "android_client_info": {
+          "package_name": "com.vpnload.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269840223586-ddp1ukou12164gofvntcam12eq6j3cm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeQKAr7WWCXkW-6dhl4dqfDDphdDJa6UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269840223586-ddp1ukou12164gofvntcam12eq6j3cm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

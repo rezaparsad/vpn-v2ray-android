@@ -253,6 +253,9 @@
     <string name="update">Update</string>
     <string name="share_app">Share</string>
     <string name="share_app_title">Share VPN Load</string>
-
+    <string name="description_share_app">Download link VPNLoad.</string>
+    <string name="text_download_link">Download link VPNLoad.</string>
+    <string name="app_name_auth">VPNLoad</string>
+    <string name="link_status">"http://vpnload.vpnload.de/api/v1/status/"</string>
 
 </resources>

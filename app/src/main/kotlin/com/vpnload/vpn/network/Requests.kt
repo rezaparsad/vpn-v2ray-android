@@ -5,7 +5,6 @@ import com.vpnload.vpn.R
 import android.app.Activity
 import android.os.Build
 import android.provider.Settings
-import android.widget.Toast
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -42,7 +41,7 @@ class Requests(context: Activity) {
                     Settings.Secure.ANDROID_ID
                 )
 
-                params["app_name"] = "VPNLoad"
+                params["app_name"] = activity.getString(R.string.app_name_auth)
                 params["device_id"] = id
                 params["device_model"] = "$manufacturer $model"
                 params["system_version"] = "SDK " + Build.VERSION.SDK_INT

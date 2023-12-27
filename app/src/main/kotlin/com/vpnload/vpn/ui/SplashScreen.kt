@@ -108,7 +108,7 @@ class SplashScreen : AppCompatActivity() {
     }
 
     private fun getData() {
-        Requests(this).post("http://vpnload.de/api/v1/status/", object: RequestResponseCallback {
+        Requests(this).post(getString(R.string.link_status), object: RequestResponseCallback {
             override fun callback(data: String) {
                 val jsonData = JSONObject(data)
                 val to = jsonData.getJSONObject("to")
